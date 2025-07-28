@@ -114,15 +114,15 @@ GIT_TOKEN = getenv(
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/TheTeamVivek"
+    "SUPPORT_CHANNEL", "https://t.me/o_zzk"
 )  # Example:- https://t.me/TheTeamVivek
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/TheTeamVk"
+    "SUPPORT_GROUP", "https://t.me/ndkdhdkdbj"
 )  # Example:- https://t.me/TheTeamVk
 
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
-AUTO_LEAVING_ASSISTANT = is_bool(getenv("AUTO_LEAVING_ASSISTANT", "False"))
+AUTO_LEAVING_ASSISTANT = is_bool(getenv("AUTO_LEAVING_ASSISTANT", "True"))
 
 # Time after which you're assistant account will leave chats automatically.
 AUTO_LEAVE_ASSISTANT_TIME = int(
