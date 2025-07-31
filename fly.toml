@@ -1,0 +1,30 @@
+app = "yukki-bot-app"
+primary_region = "ams"
+
+[build]
+  image = "python:3.11-slim"
+
+[env]
+  # لا تضع قيم هنا، ستُضاف في لوحة تحكم Fly.io أو عبر CLI:
+  # API_ID = ""
+  # API_HASH = ""
+  # BOT_TOKEN = ""
+  # OWNER_ID = ""
+  # LOG_GROUP_ID = ""
+  # MONGO_DB_URI = ""
+  # MUSIC_BOT_NAME = ""
+  # SPOTIFY_CLIENT_SECRET = ""
+  # SPOTIFY_CLIENT_ID = ""
+  # GIT_TOKEN = ""
+  # STRING_SESSIONS = ""
+
+[experimental]
+  auto_rollback = true
+
+[[services]]
+  internal_port = 8080
+  protocol = "tcp"
+
+[[services.ports]]
+  handlers = ["http"]
+  port = 80
